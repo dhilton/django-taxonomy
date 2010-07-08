@@ -60,7 +60,7 @@ class TaxonomyTerm(models.Model):
       unique_together = ('taxonomy', 'term')
 
    def __unicode__(self):
-      return u"%s [%s]" % (self.term, self.taxonomy)
+      return u"%s " % self.term
 
 class Taxon(models.Model):
    """Mappings between content and any taxonomy types/terms used to classify it"""
